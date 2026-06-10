@@ -1,3 +1,8 @@
+export default defineConfig({
+  base: '/TejasviArangetram_July12/', // Change this to match your EXACT GitHub repository name!
+  plugins: [react()],
+})
+
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
