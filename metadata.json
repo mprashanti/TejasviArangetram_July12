@@ -1,0 +1,6 @@
+{
+  "name": "Arangetram of Tejasvi Vijay",
+  "description": "The official website for the Bharatanatyam Arangetram of Tejasvi Vijay on July 12th, 2026. Celebrate a traditional debut performance of classical dance, biography, program information, and guest messages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
