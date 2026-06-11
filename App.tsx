@@ -1,17 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Landmark, GraduationCap, Compass, BookOpen, Music, Users, MapPin, Heart, QrCode } from 'lucide-react';
-import Hero from './components/Hero';
-import Invitation from './components/Invitation';
-import AboutBharatanatyam from './components/AboutBharatanatyam';
-import TheDancer from './components/TheDancer';
-import TheGuru from './components/TheGuru';
-import Blessings from './components/Blessings';
-import Program from './components/Program';
-import Gallery from './components/Gallery';
-import Guestbook from './components/Guestbook';
-import VenueDirections from './components/VenueDirections';
-import Gratitude from './components/Gratitude';
-import QrCodeManager from './components/QrCodeManager';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Landmark, GraduationCap, Compass, BookOpen, Music, Users, MapPin, Heart, QrCode } from 'lucide-react';
+import Hero from './Hero';
+import Invitation from './Invitation';
+import AboutBharatanatyam from './AboutBharatanatyam';
+import TheDancer from './TheDancer';
+import TheGuru from './TheGuru';
+import Blessings from './Blessings';
+import Program from './Program';
+import Gallery from './Gallery';
+import Guestbook from './Guestbook';
+import VenueDirections from './VenueDirections';
+import Gratitude from './Gratitude';
+import QrCodeManager from './QrCodeManager';
+
+export default function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
